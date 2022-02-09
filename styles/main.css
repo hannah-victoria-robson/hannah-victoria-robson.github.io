@@ -75,33 +75,6 @@ text-align: center;
 font-family: Roboto;
 }
 
-/*
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
-  text-align: right;
-  margin:0;
-	padding:2em;
-  font-family: Roboto, tahoma; 
-  
-}
-
-.footer li {
-  display:inline;
-  padding: 1em;
-	margin-right: 3vw;
-  color: #AE9BBF;
-  font-weight: bolder;
-  font-size: 20px;
-}
-
-.footer li:hover {
-color: white;
-}
-*/
 
 .completed {
   text-decoration: line-through;
