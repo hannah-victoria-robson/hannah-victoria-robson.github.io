@@ -1,8 +1,8 @@
 
 
 #background-video {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -25,7 +25,7 @@ a {
 
 #nav li {
 	display:inline;
-  padding: 1em;
+  padding: 0em;
 	margin-left: 3vw;
   color: #AE9BBF;
   font-weight: bolder;
@@ -93,7 +93,7 @@ font-family: Roboto;
   font-family: sans-serif;
   line-height: 6vw;
 }
-.header-list {
+.list-header {
   font-size: 2em;
 
 }
@@ -101,25 +101,34 @@ font-family: Roboto;
 #grid-list li:hover {
   color: rgb(255, 255, 255);
 }
-/*
-#footer li {
-   position: absolute;
-   bottom:0;
-   width:100%;
-   height:60px;
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 40px;
+justify-content: left;
+padding: 1em;
+
 }
-*/
+#footer li{
+  display: inline;
+  padding: 0px 10px;
+	margin-left: 0px;
+  font-family: Roboto, tahoma; 
+  color: #AE9BBF;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: left;
+  
+}
 /* mobile adjustments below */
 
 @media screen and (max-width: 480px) {
- /*
-  #nav {
-    display: block;
-    position: fixed;} */
-
+  
   #background-video {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -127,50 +136,57 @@ font-family: Roboto;
     top: 0;
     bottom: 0;
     z-index: -1;
+    
   }
+
+  #nav {
+    display: block;
+    position: fixed; }
+
   .grid-container {
-    grid-template-columns: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     grid-row-gap: 0em;
-    padding-top: 4em;
+    padding-top:10em;
     padding-left: 4em;
     padding-right: 4em;
     padding-bottom: 0em;
+    height: 100%;
   }
   
   #grid-list {
     padding-left: 4em;
-    padding-right: 4em;
+    padding-right: 1em;
     padding-top: 0em;
     padding-bottom: 0em;
     margin-left: 4em;
-    ;
-
     display: block;
     text-align: right;
     font-size: 5vw;
   }
   #grid-list li {
-    line-height: 3em;
+    line-height: 3em; }
 
-}
-.myname {
-  text-indent: 2vw;
+ .myname {
+  margin-left: 8vw;
   text-align: center;
   font-family: sans-serif;
   color: #62447c;
-  font-size: 7em;
+  font-size: 28vw;
   text-shadow: #482666;
   opacity: 0.6;
-}
-.sub-heading {
-  font-family: Roboto, tahoma; 
+  }
+ .list-header {
+  font-family: sans-serif;
   color: #62447c;
-  font-weight: bolder;
-  font-size: 0.1vw;
+  font-weight: medium;
+  font-size: 11vw;
   justify-content: center;
   text-align: right;
+  } 
+ .sprint {
+  margin-left: 3em;
+  font-size: 7vw;
 }
-.sprint {
-margin-left: 3em;}
 }
