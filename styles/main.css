@@ -97,5 +97,33 @@ font-family: Roboto;
 }
 
 #grid-list li:hover {
-  color: white;
+  color: rgb(15, 9, 9);
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: .1 .1 1fr;
+    justify-content: center;
+    grid-row-gap: 9em;
+  }
+  #grid-list {
+    line-height: 6px;
+    padding: 4em;
+  }
+  #grid-list li {
+    line-height: 6em;
+
+  }
+  .myname {
+    padding-top: 5vw;
+    text-align: center;
+  }
+  #nav {
+    display: block;
+    position:relative;
+  }
+  ul {list-style-type: none;}
+  li a {
+    display: block;
+  }
 }
