@@ -107,8 +107,8 @@ font-family: Roboto;
   width: 100%;
   /* Height of the footer*/ 
   height: 40px;
-justify-content: left;
-padding: 1em;
+  justify-content: left;
+  padding: 1em;
 
 }
 #footer li{
