@@ -101,27 +101,27 @@ font-family: Roboto;
 #grid-list li:hover {
   color: rgb(255, 255, 255);
 }
-#footer {
+/*
+.footer-text {
   position: fixed;
   bottom: 0;
   width: 100%;
-  /* Height of the footer*/ 
   height: 40px;
   justify-content: left;
   padding: 1em;
 
 }
-#footer li{
+.footer-text li{
   display: inline;
   padding: 0px 10px;
-	margin-left: 0px;
+	margin-left: 3vw;
   font-family: Roboto, tahoma; 
   color: #AE9BBF;
   font-weight: bolder;
   font-size: 20px;
   text-align: left;
   
-}
+} */
 /* mobile adjustments below */
 
 @media screen and (max-width: 480px) {
@@ -140,8 +140,11 @@ font-family: Roboto;
   }
 
   #nav {
+    padding: 1vw;
     display: block;
     position: fixed; }
+
+  
 
   .grid-container {
     grid-template-columns: 1fr;
