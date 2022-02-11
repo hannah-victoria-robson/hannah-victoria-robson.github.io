@@ -1,7 +1,7 @@
 
 html {
 
-  background-color: #7f5ece; 
+  background-color: #2a408a; 
 }
 body{
   margin:0;
@@ -79,8 +79,9 @@ h1 {
       font-size: 5em;
       text-shadow: #482666;
       opacity: 0.8;
-      text-shadow: 1px 0px 4px #ffffff73, 2px 0px 4px #fa28e8, 3px 0px 4px #FFD5FF, 2px 0px 3px #f953ff9f, 2px 3px 15px #ff65f7, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
-
+      /*
+      text-shadow: 1px 0px 4px #ffffff13, 2px 0px 4px #fa28e81e, 3px 0px 4px #ffd5ff13, 2px 0px 3px #f953ff25, 2px 3px 15px #ff65f72d, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #d42cc91f,40px 0vw 200px #d42cc91a;
+*/
      
       }
 img {
@@ -93,11 +94,11 @@ object-fit: scale-down;
       h3 {
         text-align: left; 
         font-family: sans-serif;
-        color: #440A4C;
+        color: #ffffff;
         font-size: 3em;
         text-shadow: #482666;
         text-shadow: ;
-        opacity: 1;
+        opacity: 0.8;
         margin-top: -1em;
         margin-bottom: 1em;}
 
