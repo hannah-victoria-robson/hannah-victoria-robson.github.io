@@ -2,6 +2,11 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rozha+One&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../styles/blog.css">
   <title>
 Blog CSS: Margins, Borders, Padding
   </title>
@@ -9,16 +14,94 @@ Blog CSS: Margins, Borders, Padding
 
 <body>
   <header>
-<h1>
- Blog CSS: Margins, Borders, Padding</h1>
+    <nav>
+      <ul id="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <!--
+        <ul class="dropdowncontent">
+          <li class="menu"><a href="#">Blog1</a></li> 
+          <li class="menu"><a href="#">Blog2</a></li> 
+        </ul>    -->
+        <li><a href="exercises.html">Exercises</a></li> 
+        <li><a href="https://github.com/hannah-victoria-robson">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/hannahvrobson/">LinkedIn</a></li>
+        <!-- <li><a href="#">Learning Plan</a></li> 
+          <li><a href="#">Github</a></li>        
+        <li><a href="#">About</a></li> -->
+      </ul>
+    </nav>
 
   </header>
 
+        <div class="parent">
+        <div class="blog-title">
+          <div>  <h1> Sprint 2 - Tech</h1> </div>
+          <div> <h2> CSS: Margins, Borders, and Padding</h2>
+          <h3 >Which should I be using?</h3> </div>
+          </div>
+      <div class="margins">
+        <div><h4>Margins</h4> </div>
+        <div> <p>A margin is the space around an element’s border </p> </div>
+        <div><p>  Think of the margin as a forcefield that keeps other things away. With negative numbers, this can be reversed to bring them closer or even overlap. </p> </div>
+        <div><p> For example, this is what this page is currently set to: </p> </div>
+        <div> <img class="examples" src="../styles/images/margins.png" alt="window frame in the wall"></div>
+        <div><p> If I change the top margin to a negative number, like this: </p> </div>
+        <div> <img class="examples" src="../styles/images/change-margin.png" alt="window frame in the wall"></div>
+        <div><p> Then this element removes space at the top, overlapping other elements: </p> </div>
+        <div> <img class="examples" src="../styles/images/margin-change-result.png" alt="window frame in the wall"></div>
+      </div>
+      <div class="border"> 
+        <div> <h4>Borders</h4> </div>
+        <p> Borders wrap around both content and padding.         </p>
+        <p>Think of borders as an invisible divider between the margin and padding. They are invisible by default and can be made visible if desired. </p>
+        <p>Here is an example of an image with a border:</p>
+        <div> <img class="examples" id="border-example" src="../styles/images/pexels-tom-fisk-2246950.jpg" alt="window frame in the wall"></div>
+        <p>This border was added with the following code:</p>
+        <div> <img class="examples"  src="../styles/images/border-code.png" alt="window frame in the wall"></div>
+        <p>If I add the padding to the image:</p>
+        <div> <img class="examples"  src="../styles/images/border padding code.png" alt="window frame in the wall"></div>
+        <p>The border expands to the size of the content and padding, like so:</p>
+        <div> <img class="examples"  src="../styles/images/border with padding.png" alt="window frame in the wall"></div>
 
 
+         </div>
+      <div class="padding"> 
+        <div> <h4>Padding</h4> </div>
+        <p>Padding is the space inside an element's border. </p>
+        <p>Think of padding as the space you have insight of your blanket fort. Do you want it to be tight around you or do you want room to stretch? </p>
+        <div> <img class="examples" src="../styles/images/pexels-tom-fisk-2435292.jpg" alt="window frame in the wall"></div>
+        <p>take this image, for example. the current padding can be seen below: </p>
+        <div> <img class="examples" src="../styles/images/padding.png" alt="window frame in the wall"></div>
+        <p>If we wanted there to be more space on either side of the image, we can increase the padding like so: </p>
+        <div> <img class="examples" src="../styles/images/code with padding.png" alt="window frame in the wall"></div>
+        <p>and this will increase the space between the image and the border, on both sides:</p>
+        <div> <img class="examples" id="border-example2" src="../styles/images/pic with padding.png" alt="window frame in the wall"></div>
+      </div>
+     
+      <div class="more"> </div>
+      </div>
+<!--
+      <header class="header">
+        <div>  <h1> Sprint 2 - Tech</h1> </div>
+        <div> <h2> CSS: What the heck are margins, borders, and padding?</h2>
+        <h3 >and how on earth do I use them?</h3> </div>
+      </header>
+      <content>
+        <div class="margins">
+          <div> Margins </div>
+          <div> In CSS, a margin is the space around an element’s border </div>
+          <div> Think of the margin as a forcefield that keeps others elements away </div>
+          <div> 1. Change an Element’s Position on the Page. </div> 
+          <div> 2. Set the Distance Between Nearby Elements. </div>
+          <div> 3. Overlap elements. </div>
+        </div>
+        <div id="borders">
+          <div> Borders </div>
 
-
-
+           </div>
+        </content>
+      
   <footer>
 
 
