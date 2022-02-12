@@ -363,6 +363,16 @@ h6 {
 p > a {
   text-decoration: underline;}
 
+.census {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-columns: auto;
+max-width: 60em;
+align-items: center;
+}
+.census > img {
+  object-fit: cover;
+}
 .ethical-decision {
   padding-left: 10em;
   padding-right: 10em;
