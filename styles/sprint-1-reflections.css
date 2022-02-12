@@ -204,42 +204,39 @@
 */
 
 /* End of background code */
-
+* {
+  box-sizing: border-box;
+}
 html{
   background-image: url(../styles/images/sprint-1-reflections-images/tile_background\ \(1\)\ \(1\).png);
-  
+  width: 100vw;
 }
+/*
 body {
   width: 100%;
   max-width: 100%;
-}
+} */
 
 a {
   color: unset;
   text-decoration: unset;
 }
 #nav {
-  background-color: #00000000;
-  background-repeat: repeat-x;  
-  width: 100%;
+display: inline;
+  width: 1fr;
   position: absolute;
-	margin: 0px;
-	padding:2em;
+	margin: 2em;
   font-family: Roboto, tahoma; 
-
+word-spacing: 2em;
 }
 
-.bg-image {
-  max-width: 10%;
-}
 
 #nav li {
 	display: inline;
-  padding: 0em;
-	padding-left: 3vw;
   color: #000000;
   font-weight: bolder;
   font-size: 20px;
+  
 }
 
 #nav li:hover {
@@ -329,10 +326,10 @@ h6 {
   
   .main-body{
   
-   padding-top: 10vh;
-   padding-bottom: 10vh;
-   padding-left: 10vw;
-   padding-right: 10vw;
+   margin-top: 10vh;
+   margin-bottom: 10vh;
+   margin-left: 10vw;
+   margin-right: 10vw;
   }
   .grid-1 {
     display: grid;
