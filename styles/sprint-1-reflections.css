@@ -336,8 +336,10 @@ h6 {
   }
   .grid-1 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
+    grid-auto-flow: row;
+
     
   }      
 
@@ -348,60 +350,22 @@ h6 {
 }
 
 .grid-character > img {
-  max-width: 500px;
-  max-height: 500px;
-  height: fit-content;
-  object-fit: scale-down;
-  overflow: hidden;
+ max-width: 25vw;
+  object-fit: cover;
+
 }
 .grid-character {
   display: grid;
-  object-fit: cover;
-  overflow: hidden;
-  
-  grid-template-columns: 30em 30em 30em;
-  column-gap: 5em;
-  grid-template-rows: 1fr;
-  row-gap: 15px;
-  grid-template-areas: 
-  "photo1 photo2 photo3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 1em;
+  grid-auto-flow: row;
+  padding-left: 2em;
+
 }
 p > a {
-  text-decoration: underline;
-}
-.photo3 {
-  grid-area: photo3;
+  text-decoration: underline;}
 
-
-}
-
-
-.photo1 {
-  padding-top: 0.5em;
-  grid-area: photo1;
-
-
-}
-.photo2 {
-  grid-area: photo2;
-  padding-right: 5em;
-
-}
-
-
-.photo1 > img {
-  object-fit: cover;
-  padding-top 1em;
-
-
-}
-.photo2 > img {
-    object-fit: cover;
-}
-
-.photo3 > img {
-  object-fit: cover;
-}
 .ethical-decision {
   padding-left: 10em;
   padding-right: 10em;
@@ -475,7 +439,6 @@ p > a {
 .footer-li {
   font-family: Roboto, tahoma;
   font-size: x-large;
-  padding-top: 4em;
 }
 .footer-li2 {
   font-family: Roboto, tahoma;
