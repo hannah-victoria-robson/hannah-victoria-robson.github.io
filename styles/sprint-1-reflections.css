@@ -1,0 +1,41 @@
+
+html {
+
+  background-color: #2a408a; 
+}
+body{
+  margin:0;
+  padding:0;
+  }
+a {
+  color: unset;
+  text-decoration: unset;
+}
+#nav {
+  background-color: rgba(0, 0, 0, 0.212);
+  width: 100%;
+  position: absolute;
+	margin:0px;
+	padding:2em;
+  font-family: Roboto, tahoma; 
+}
+
+
+
+
+#nav li {
+	display: inline;
+  padding: 0em;
+	margin-left: 3vw;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.banner {
+}
+
+
+
+#nav li:hover {
+  color: rgb(53, 10, 78);
+}
