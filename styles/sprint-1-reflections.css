@@ -227,11 +227,12 @@ display: inline;
   position: absolute;
 	margin: 2em;
   font-family: Roboto, tahoma; 
-word-spacing: 2em;
+
 }
 
 
 #nav li {
+  margin-left: 2em;
 	display: inline;
   color: #000000;
   font-weight: bolder;
@@ -252,7 +253,7 @@ word-spacing: 2em;
       font-weight: ;
       letter-spacing: 4px;
       text-shadow: 1px 0px 4px #44414600, 2px 0px 4px #ecd5ff04, 3px 0px 4px #ffd5ff00, 2px 0px 3px #882cd400, 2px 3px 15px #9b43d600, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #d42cc900,40px 0vw 200px #d42cc900;
-
+padding-left: 25em;
       padding-top: 2em;
     }
   
