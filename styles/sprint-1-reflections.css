@@ -219,14 +219,14 @@ a {
   text-decoration: unset;
 }
 #nav {
-  background-color: #0000004b;
+  background-color: #00000000;
   background-repeat: repeat-x;  
   width: 100%;
   position: absolute;
 	margin: 0px;
 	padding:2em;
   font-family: Roboto, tahoma; 
-  overflow: hidden;
+
 }
 
 .bg-image {
@@ -237,10 +237,9 @@ a {
 	display: inline;
   padding: 0em;
 	padding-left: 3vw;
-  color: #ffffff;
+  color: #000000;
   font-weight: bolder;
   font-size: 20px;
-  overflow: hidden;
 }
 
 #nav li:hover {
@@ -251,7 +250,7 @@ a {
  .neon{
       font-family: Roboto, tahoma;
       font-size: 30px !important;
-      color: rgba(255, 255, 255, 0.575) !important;
+      color: rgba(0, 0, 0, 0.808) !important;
       position: ;
       font-weight: ;
       letter-spacing: 4px;
@@ -460,9 +459,32 @@ p > a {
   grid-template-rows: auto;
   column-gap: 2em;
   row-gap: 4em;
+  padding-bottom: 5em;
 
 }
 .meme-grid > img {
   object-fit: cover;
   max-width: 30vw;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4em:
+
+}
+.footer-li {
+  font-family: Roboto, tahoma;
+  font-size: x-large;
+  padding-top: 4em;
+}
+.footer-li2 {
+  font-family: Roboto, tahoma;
+  font-size: x-large;
+
+}
+.footer-li:hover {
+  color: #ffffff;
+}
+.footer-li2:hover {
+  color: #ffffff;
 }
