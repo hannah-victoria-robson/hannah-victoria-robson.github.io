@@ -201,8 +201,7 @@ font-weight:bold ;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;  
   grid-template-areas: 
-  "image1 image2"
-  "text1 text1" ;
+  "image1 image2";
   object-fit: cover;
 padding-top: 50px;
 row-gap: 20px;
@@ -226,15 +225,7 @@ row-gap: 20px;
   }
 
 
-.two-image-grid-text {
-  grid-area: text1 / text1;
-  color: #ffffff;
-  text-align: center;
-  align-self: center;
-  justify-self: center;
-  padding-top: 0em;
-  font-size: 3vw;
-}
+
 
 
   /* CONTENT -  */
@@ -343,9 +334,23 @@ row-gap: 20px;
 
 
 
+/* multi image banner row */
 
+.num-wide-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-width: 20%;
+  height: min-content;
+  column-gap: 20px;
+}
 
+.num-wide-banner > img {
+object-fit: cover;
+border-radius: 5%;
+height: 30vh;
 
+}
 
 
 /* FOOTER */
