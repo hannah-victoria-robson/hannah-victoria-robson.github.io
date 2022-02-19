@@ -341,7 +341,7 @@ row-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   column-width: 20%;
-  height: min-content;
+  height: fit-content;
   column-gap: 20px;
 }
 
