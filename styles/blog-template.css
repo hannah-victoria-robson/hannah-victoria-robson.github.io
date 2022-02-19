@@ -153,6 +153,10 @@ li {
   font-size: 20px;
 }
 
+
+/* BODY CONTENT */
+
+
 .main-content{
   align-content: center;
   justify-content: center;
@@ -185,41 +189,56 @@ li {
 
 
 /* BANNER - TWO WIDE IMAGE + TEXT OVERLAY */
+
   .two-image-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr;
+  grid-template-rows: auto;  
   grid-template-areas: 
-  "image1 image2" 
-  "text1 text1";
+  "image1 image2"
+  "text1 text1" ;
   object-fit: cover;
+padding-top: 50px;
+row-gap: 20px;
+
 }
+
 
 .two-image-grid-image1 {
   grid-area: image1;
   object-fit: cover;
-  background-color: aqua;
-  height: ;
+  height: 400px;
+  opacity: 100%;
+
 }
 
 .two-image-grid-image2 {
   grid-area: image2;
   object-fit: cover;
-  background-color: rgb(255, 0, 234);
+  height: 400px;
+  opacity: 100%;
+  }
 
-}
 
 .two-image-grid-text {
-  grid-area: text1;
-  background-color: rgb(0, 255, 55);
+  grid-area: text1 / text1;
+  color: #ffffff;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  padding-top: 0em;
+  font-size: 3vw;
+}
 
+
+  /* CONTENT -  */
 
 
 
 
   /* CONTENT - THREE WIDE SECTIONS */
 
-}
+
 
   .gridfull{
   justify-content: center;
@@ -230,7 +249,6 @@ li {
   column-gap: 10px;
   grid-template-areas: "grid1 grid2 grid3";
 }
-
 
 
 #grid1 {
@@ -285,7 +303,11 @@ li {
   display: grid;
   grid-template-columns: auto auto ;
   grid-template-rows: auto;
-  grid-template-areas: "one two" "three four" "five six";
+  grid-template-areas: 
+  "one two" 
+  "three four" 
+  "five six";
+ 
   padding: 10px;
   align-items: center;
   padding-left: 25px;
@@ -312,6 +334,9 @@ li {
 .dom4{
   grid-area: four;
 }
+
+/* FOOTER */
+
 .footer {
   display: block;
   text-align: center;
