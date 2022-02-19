@@ -51,7 +51,7 @@ height: 50%;
 }
 
 #nav li:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(150, 94, 255);
 }
 
 .neon1{
@@ -137,9 +137,19 @@ h4 {
   object-fit: cover;
   padding-bottom: 10em;
 }
+
+ul {
+  list-style: none;
+}
+
+.sisterStory {
+  background-color: rgba(233, 150, 122, 0.24);
+}
 .footer {
+  display: block;
+
   text-align: center;
-  margin-top: 4em;
+  margin-top: 10em;
 
 }
 .footer-li {
