@@ -36,11 +36,12 @@ a {
 /* NAVIGATION MENU */
 
 #nav {
-  display: inline;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 10fr;
   width: 80%;
   height: 50%;
   position: absolute;
- 
+ column-gap: 10px;
 
   font-family: Roboto, tahoma; 
   word-spacing: 2em;
@@ -67,15 +68,18 @@ a {
   text-align: right;
 }
 .neon {
+  align-self: top;
   break-before: always;
   font-family: Roboto, tahoma;
   font-size: 30px !important;
-  color: rgba(0, 0, 0, 0.808) !important;
-  font-weight: ;
+  color: rgba(121, 0, 177, 0.808) !important;
+  font-weight: bolder;
   word-spacing: -.1em;
   letter-spacing: 4px;
-  padding-top: 2em;
+  padding-top: ;
   text-align: right;
+  text-shadow: 1px 0px 4px #d28fec, 2px 0px 4px #e8a1f7, 3px 0px 4px #ffafff, 2px 0px 3px #882cd4b6, 2px 3px 15px #9b43d6, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+
 }
 
 .flicker-slowest {
@@ -98,7 +102,7 @@ a {
 
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-    text-shadow: none;
+    text-shadow: 1px 0px 4px #d28fec, 2px 0px 4px #e8a1f7, 3px 0px 4px #ffafff, 2px 0px 3px #882cd4b6, 2px 3px 15px #9b43d6, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
     opacity: .99;
     
   }
