@@ -1,3 +1,5 @@
+/* GENERAL DOCUMENT STLYES */
+
 * {
   box-sizing: border-box;
 }
@@ -30,6 +32,9 @@ a {
   color: unset;
   text-decoration: unset;
 }
+
+/* NAVIGATION MENU */
+
 #nav {
   display: inline;
   width: 80%;
@@ -55,6 +60,8 @@ a {
 #nav li:hover {
   color: rgb(150, 94, 255);
 }
+
+/* HANNAH NEON FLICKER  */
 
 .neon1{
   text-align: right;
@@ -91,7 +98,7 @@ a {
 
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-    //text-shadow: none;
+    text-shadow: none;
     opacity: .99;
     
   }
@@ -100,10 +107,13 @@ a {
   } 
 }
 
+/* FONTS */
+
 p {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: lighter;
+  line-height: 30px;
 }
 
 h1 /* main header */ {
@@ -165,33 +175,60 @@ li {
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding: 8vw;
-padding-top: 4vw;
-margin-top: 8vh;
-margin-bottom: 12vh;
+  padding: 3vw;
+  padding-top: 4vw;
+  margin-top: 8vh;
+  margin-bottom: 12vh;
   font-size: x-small;
   
 }
 
-/* .controlflow {
 
-  background: rgba( 253, 253, 253, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding: 2em;
-  font-size: x-small;
-} */
+/* BANNER - TWO WIDE IMAGE + TEXT OVERLAY */
+  .two-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: 
+  "image1 image2" 
+  "text1 text1";
+  object-fit: cover;
+}
+
+.two-image-grid-image1 {
+  grid-area: image1;
+  object-fit: cover;
+  background-color: aqua;
+  height: ;
+}
+
+.two-image-grid-image2 {
+  grid-area: image2;
+  object-fit: cover;
+  background-color: rgb(255, 0, 234);
+
+}
+
+.two-image-grid-text {
+  grid-area: text1;
+  background-color: rgb(0, 255, 55);
+
+
+
+
+
+  /* CONTENT - THREE WIDE SECTIONS */
+
+}
+
   .gridfull{
   justify-content: center;
   align-content: center;
   display: grid;
   grid-template-columns: 1fr  1fr 1fr ;
   grid-template-rows: auto auto;
-  grid-template-areas: "grid1 grid2 grid3";
   column-gap: 10px;
+  grid-template-areas: "grid1 grid2 grid3";
 }
 
 
@@ -202,23 +239,23 @@ margin-bottom: 12vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "one1" "two1" "three1";
- padding: 10px;
- align-items: center;
- padding-left: 25px;
- padding-right: 25px;
+  padding: 10px;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 
 #grid2 {
-      grid-area: grid2;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "one2" "two2" "three2";
-    padding: 10px;
-    align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
+  grid-area: grid2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "one2" "two2" "three2";
+  padding: 10px;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 #grid3 {
   grid-area: grid3;
@@ -226,23 +263,55 @@ margin-bottom: 12vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "one3" "two3" "three3";
-
- padding: 10px;
- align-items: center;
- padding-left: 25px;
- padding-right: 25px;
+  padding: 10px;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 #grid1.glassbg {
   background-color:rgba(255, 163, 127, 0.288);
 }
 #grid2.glassbg {
-  background-color:rgba(245, 222, 196, 0.158);
+  background-color:rgba(248, 222, 192, 0.342);
 }
 #grid3.glassbg {
-  background-color:rgba(159, 214, 228, 0.336);
+  background-color:rgba(255, 227, 204, 0.603);
 }
 
+/* 2x3 grid */
+
+.grid-dom{
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-template-rows: auto;
+  grid-template-areas: "one two" "three four" "five six";
+  padding: 10px;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  column-gap: 8vw;
+  row-gap: 2vw;
+  justify-items: center;
+}
+
+.dom1 {
+  grid-area: one;
+}
+.dom2 {
+  grid-area: two;
+  object-fit: cover;
+  background-color: #ffffffe7;
+  padding:10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.dom3 {
+  grid-area: three;
+}
+.dom4{
+  grid-area: four;
+}
 .footer {
   display: block;
   text-align: center;
