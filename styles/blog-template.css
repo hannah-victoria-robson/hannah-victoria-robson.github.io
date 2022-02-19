@@ -127,7 +127,7 @@ h1 /* main header */ {
 }
 
 h2 /* sub-header*/{
-  font-family: sans-serif;
+  font-family: Roboto, tahoma;
   font-size: 2em;
   padding-top:2em;
 
