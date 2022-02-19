@@ -153,7 +153,13 @@ li {
   font-size: 20px;
 }
 
+.italics {
+font-style: italic;
+}
 
+.bold {
+font-weight:bold ;
+}
 /* BODY CONTENT */
 
 
@@ -334,6 +340,13 @@ row-gap: 20px;
 .dom4{
   grid-area: four;
 }
+
+
+
+
+
+
+
 
 /* FOOTER */
 
