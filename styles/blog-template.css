@@ -28,6 +28,7 @@ img {
 }
 
 
+
 a {
   color: unset;
   text-decoration: unset;
@@ -207,8 +208,8 @@ font-weight:bold ;
   grid-template-areas: 
   "image1 image2";
   object-fit: cover;
-padding-top: 50px;
-row-gap: 20px;
+  padding-top: 50px;
+  row-gap: 20px;
 
 }
 
@@ -356,6 +357,34 @@ height: 30vh;
 
 }
 
+.image-grid-block {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.single-banner {
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+object-fit: cover;
+grid-template-areas: 
+"banner-image banner-image1";
+
+}
+
+.banner-image {
+  grid-area: banner-image;
+  object-fit: cover;
+
+}
+
+.banner-image2 {
+  grid-area: banner-image2;
+  object-fit: cover;
+
+}
 
 /* FOOTER */
 
