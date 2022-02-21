@@ -386,6 +386,10 @@ grid-template-areas:
 
 }
 
+.video-yt {
+  align-self: center;
+}
+
 /* FOOTER */
 
 .footer {
