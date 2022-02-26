@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../styles/blog-template.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="../HV-favicon/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rozha+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="https://github.com/hannah-victoria-robson">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/hannahvrobson/">LinkedIn</a></li>
+          <li id="neon1" class="neon" data-text="U">Ha<span class="flicker-slow">n</span>nah Vi<span class="flicker-slowest">ct</span><span class="flicker-slow">o</span><span class="flicker-slowest">ri</span><span class="flicker-medium">a'</span><span class="flicker-slowest">s</span><span class="flicker-slower"> Stu</span><span class="flicker-fast">d</span><span class="flicker-slowest">ent</span> Bl<span class="flicker-slow">og</span></li>        
+        </ul>
+      </nav>
+    </header>
+    <div class="main-content">
+      <div class="header">
+        <h1
+          >Problem Solving
+        </h1>
+      </div>
+      <div class="num-wide-banner"> 
+        <img src="../styles/images/sprint-4-tech-blog-images/business-dog.jpg">
+        <img src="../styles/images/sprint-4-tech-blog-images/doctor-dog-front.jpg">
+        <img src="../styles/images/sprint-4-tech-blog-images/high-viz-dog.jpg">
+      </div>
+      <h2>
+        A time I got blocked on a problem:
+      </h2>
+      <div class="glassbg">
+        <h3> 
+          What was the problem?
+        </h3>
+        <p>
+          There was code that had door + hiding grouped together. Scooby was hiding behind some of the doors and I had to get the door number for each door Scooby was behind, then return it. The structure was:<br><br>
+          1  ----------------- List of doors -> <br>
+          2  --------------------------------- door -> <br>
+          3a ---------------------------------------- door number: "____"  <br>
+          3b ---------------------------------------- who is hiding behind the door: "____" <br> <br> Before targeting the next door, I had to search within the current door to see if "hiding: ______" was Scooby. This had to be applied to every door in the list, regardless of how many there were. When Scooby was the name in hiding, I then had to get the door number at the same level. I found this confusing because of the 'objects' (pairs of information, such as "Name: Hannah"), being nested within arrays. <br> <br>The thing that tripped me up was the fact that the test code (checking my answer) was running 3 times with 3 different lists. I had not checked this in the test code, so I thought that it was an extra level deep. I was picturing it as: <br><br>
+          1 ------------------ List of lists -><br>
+          2 ---------------------------------- List of doors -> <br>
+          3 -------------------------------------------------- door -> <br>
+          4a --------------------------------------------------------- door number: "____"<br>
+          4b --------------------------------------------------------- who is hiding behind the door: "____"<br> <br>
+          Because of this misunderstanding, I was initially finding it impossible to correctly access the intended information. 
+
+        </p>
+        <h3> 
+          What problem solving techniques did you use?
+        </h3>
+        <ul>
+          <li><p>Pseudocode</p></li>
+          <li><p>Googling</p></li>
+          <li><p>Trying Something</p></li>
+          <li><p>Console Log</p</li>
+          <li><p>Message</p></li>
+          <li><p>Asking Facilitator For Help</p></li>
+          <li><p>Asking Peers For Help</p></li>
+        </ul>
+        <h3>
+          How did you feel throughout the process?
+        </h3>
+        <p> 
+          Frustrated, disheartened, confused, incapable. I honestly felt like I had made a mistake by doing this course and that I am not smart enough. I also felt like I had missed parts of the course somehow. It was such a simple thing to do, and I was struggling to do it. I had tried so many things, and was confusing myself more and more. I tried to remind myself that the discomfort of not knowing the answer is part of learning, but it did weigh on me. 
+        </p>
+        <h3>
+          What did you learn?
+        </h3>
+        <p>
+          That I get too ahead of myself. I was looking at the problem as the big picture, I initially used console.log to see what data was being passed to the function (what list would be searched). This returned 3 lists, which I interpreted as a list of lists. I didn’t realise that the function was being called multiple times. When discussing the challenge with a peer, I was reminded to take it one step at a time and focus on the error message I was getting rather than the structure of the list I had seen from the console.log. My peer explained that if I look at the test code, I would see that the function is being called 3 separate times on 3 different lists. This removed a level from my understanding of the list structure and made it much easier for me. 
+        </p>
+      </div>
+      <h2> 
+        A time I solved a problem in an elegant way:
+      </h2>
+      <div class="glassbg">
+        <h3>
+          What was the problem?
+        </h3>
+        <p> 
+          I needed to find all instances of the word “Buzz” in an array, no matter what case each of the letters was. The filter method is case-sensitive, so it could only pick up exact matches. <br>
+          One option was to change every character to lower case and then revert it after the filter. <br> <br>
+          In the second array, two words contained characters in upper case, which means I would need to target those exact characters by index and make them upper case.  <br>
+          After some googling, I came across the option to filter so it is checking if the current word in all capitals matches the word ”buzz” in all caps (so “buzz” would become  “BUZZ” and “buZZ”, “BuZz”, “Buzz”, etc would all match as they are also viewed as “BUZZ” during this filter search). <br><br>
+          By doing this, I have prevented any accidental consequences of changing all characters and the difficulty of then targeting two specific characters and making them upper case again.  <br>
+          Doing this meant that the original casing was still intact, and the filtered, then joined, string matched the expected output. 
+        </p>
+        <h3>
+          What problem solving techniques did you use?
+        </h3>
+        <ul>
+          <li><p>Googling</p></li>
+          <li><p>Trying Something</p></li>
+          <li><p>console.log</p></li>
+          <li><p>Error Message</p></li>
+        </ul>
+        <h3>
+          How did you feel throughout the process?
+        </h3>
+        <p>
+          A little confused and uncertain. I was googling solutions and there are so many different ways to do things, I didn't know where to begin. I saw that a method that turns text to uppercase was in the list of methods we should use for this task, so I went with the method I explained above. If I had not come across it on google, I don't think I would have thought of it.
+        </p>
+        <h3>
+          What did you learn?
+        </h3>
+        <p>
+          Methods can be nested far more than I realised and I want to understand the structure of methods, functions, objects, and nesting in greater detail. 
+        </p>
+      </div>
+      <h2> 
+        How confident I feel using each problem solving techniques/processes:
+      </h2>
+      <div class="glassbg">
+        <ul>
+          <li><p>Pseudocode - 4/10:<br>Pseudocode is code that is commented out and describes the basic steps required to achieve the desired outcome. Writing the pseudocode is no problem for me, however I have had trouble breaking things down into the smallest steps. I have noticed that I tend to get too ahead of myself.</p></li>
+          <li><p>Trying something - 6/10:<br> Trying something is simply that, trying something. Just giving something a go. I find this easy to do, however I feel that I could improve my syntax knowledge for nested methods in order for this to be an effective problem solving tool. </p></li>
+          <li><p>Rubber ducky method - 4/10:<br> Rubber ducky technique is the idea that when a programmer needs to debug their code, they should explain the program line-by-line to a rubber duck. I feel that this is quite similar to pseudocode and haven't tried it in any great depth, yet.</p></li>
+          <li><p>Reading error messages - 6/10: <br> Reading error messages involves reading and interpreting the error message you are being shown when running your code. The error will usually contain clues as to what the problem is, and always includes the code line where the problematic code starts. I find this to be a very useful problem solving tool.</p></li>
+          <li><p>Console.log() - 6/10:<br>Console logging involves running a variable, function return, or anything else that will return a value, through the console.log method. This method prints the output to the console, so you are able to see exactly what the output is at that point in the code. This is very useful during longer functions, to see what is happening at each step.</p></li>
+          <li><p>Googling - 8/10:<br>Googling is just researching solutions on the internet. This is the technique that I use the most. The difficulty with this technique is finding good resources that you find easy to understand from a reliable source, but this is fairly easy to navigate.</p></li>
+          <li><p>Asking your peers for help - 6/10: <br> During this course, I have noticed that I prefer not to reach out to peers for help. I suspect this may be ego related and want to overcome this internal feeling of resistance. I have reached out a few times and found it very helpful.</p></li>
+          <li><p>Asking coaches for help - 8/10:<br> This technique involves reaching out to a facilitator for guidance. I have used this and had multiple video calls to work through code, which I found very helpful.</p></li>
+          <li><p>Improving your process with reflection - 2/10: <br> This technique is the one I have found to be the most difficult. I haven't felt that I have had the time to reflect over my process, or maybe I have simply forgotten to do so. Refactoring code is something I want to practice more, as well as reflecting on processes.</p></li>
+        </ul>
+      </div>
+      <footer class="footer">
+      <div>
+          <a class="footer-li2" href="https://hannah-victoria-robson.github.io/index.html">Home |</a> <a class="footer-li" href="#">Back to the top</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
