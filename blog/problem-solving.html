@@ -42,11 +42,11 @@
           What was the problem?
         </h3>
         <p>
-          There was code that had door + hiding grouped together. Scooby was hiding behind some of the doors and I had to get the door number for each door Scooby was behind, then return it. The structure was:<br><br>
+          There was code that had door + hiding grouped together. Scooby was hiding behind some of the doors and I had to get the door number for each door Scooby was behind, then return it. <br>The structure was:<br><br>
           1  ----------------- List of doors -> <br>
           2  --------------------------------- door -> <br>
           3a ---------------------------------------- door number: "____"  <br>
-          3b ---------------------------------------- who is hiding behind the door: "____" <br> <br> Before targeting the next door, I had to search within the current door to see if "hiding: ______" was Scooby. This had to be applied to every door in the list, regardless of how many there were. When Scooby was the name in hiding, I then had to get the door number at the same level. I found this confusing because of the 'objects' (pairs of information, such as "Name: Hannah"), being nested within arrays. <br> <br>The thing that tripped me up was the fact that the test code (checking my answer) was running 3 times with 3 different lists. I had not checked this in the test code, so I thought that it was an extra level deep. I was picturing it as: <br><br>
+          3b ---------------------------------------- who is hiding behind the door: "____" <br> <br> Before targeting the next door, I had to search within the current door to see if "hiding: ______" was Scooby. This had to be applied to every door in the list, regardless of how many there were. When Scooby was the name in hiding, I then had to get the door number at the same level. I found this confusing because of the 'objects' (pairs of information, such as "Name: Hannah"), being nested within arrays. <br> <br>The thing that tripped me up was the fact that the test code (checking my answer) was running 3 times with 3 different lists. I had not checked this in the test code, so I thought that it was an extra level deep.<br> I was picturing it as: <br><br>
           1 ------------------ List of lists -><br>
           2 ---------------------------------- List of doors -> <br>
           3 -------------------------------------------------- door -> <br>
