@@ -73,13 +73,13 @@ a {
   break-before: always;
   font-family: Roboto, tahoma;
   font-size: 30px !important;
-  color: rgba(121, 0, 177, 0.808) !important;
+  color: rgb(255, 243, 204) !important;
   font-weight: bolder;
   word-spacing: -.1em;
   letter-spacing: 4px;
   padding-top: ;
   text-align: right;
-  text-shadow: 1px 0px 4px #d28fec, 2px 0px 4px #e8a1f7, 3px 0px 4px #ffafff, 2px 0px 3px #882cd4b6, 2px 3px 15px #9b43d6, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  text-shadow: 1px 0px 4px #ecba8f, 2px 0px 4px #f7d8a1, 3px 0px 4px #ffdbaf, 2px 0px 3px #d4a42cb6, 2px 3px 15px #d69b43, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #d4882c,40px 0vw 200px #d4882c;
 
 }
 
@@ -103,7 +103,7 @@ a {
 
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-    text-shadow: 1px 0px 4px #d28fec, 2px 0px 4px #e8a1f7, 3px 0px 4px #ffafff, 2px 0px 3px #882cd4b6, 2px 3px 15px #9b43d6, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+    text-shadow: 1px 0px 4px #ecca8f, 2px 0px 4px #f7d0a1, 3px 0px 4px #ffdbaf, 2px 0px 3px #d4962cb6, 2px 3px 15px #d69b43, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #d4832c,40px 0vw 200px #d49f2c;
     opacity: .99;
     
   }
