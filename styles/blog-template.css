@@ -353,7 +353,7 @@ font-weight:bold ;
 .num-wide-banner > img {
 object-fit: cover;
 border-radius: 5%;
-height: 30vh;
+height:25vw;
 
 }
 
