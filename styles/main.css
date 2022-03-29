@@ -200,7 +200,7 @@ font-family: Roboto;
 /* tablet adjustments below */
 
 
-@media only screen and (min-width: 768px) and (max-width: 1200px){
+@media  screen and (min-width: 768px) and (max-width: 1200px){
  
   #background-video {
     width: 100%;
@@ -262,7 +262,7 @@ font-family: Roboto;
   text-indent: 1vw;
   text-align: right;
   font-family: sans-serif;
-  color: #62447c;
+  color: #8955b693;
   font-size: 10em;
   text-shadow: #482666;
   
